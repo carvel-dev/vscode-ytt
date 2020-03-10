@@ -3,6 +3,14 @@
 	"name": "YAML",
 	"patterns": [
 		{
+			"include": "#comment"
+		},
+		{
+			"include": "source.yaml"
+		}
+	],
+	"repository": {
+		"comment": {
 			"begin": "(?:(^[ \\t]*)|[ \\t]+)(?=#\\p{Print}*$)",
 			"beginCaptures": {
 				"1": {
@@ -12,57 +20,49 @@
 			"end": "(?!\\G)",
 			"patterns": [
 				{
-					"begin": "#@",
-					"beginCaptures": {
-						"0": {
-							"name": "keyword.operator"
-						}
-					},
-					"end": "\\n",
-					"patterns": [
-						{
-							"include": "source.starlark"
-						}
-					]
+					"include": "#ytt-comment"
 				},
 				{
-					"begin": "#!",
-					"beginCaptures": {
-						"0": {
-							"name": "punctuation.definition.comment.yaml"
-						}
-					},
-					"end": "\\n",
-					"name": "comment.line.number-sign"
+					"include": "#ytt-annotation"
 				},
 				{
-					"begin": "#",
-					"beginCaptures": {
-						"0": {
-							"name": "punctuation.definition.comment.yaml"
-						}
-					},
-					"end": "\\n",
-					"name": "comment.line.number-sign"
+					"include": "#yaml-comment"
 				}
 			]
 		},
-		{
-			"include": "source.yaml"
-		}
-	],
-	"repository": {
-		"keywords": {},
-		"strings": {
-			"name": "string.quoted.double.yaml",
-			"begin": "\"",
-			"end": "\"",
+		"ytt-comment": {
+			"begin": "#!",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.comment.ytt"
+				}
+			},
+			"end": "\\n",
+			"name": "comment.line.number-sign.ytt"
+		},
+		"ytt-annotation": {
+			"begin": "#@",
+			"beginCaptures": {
+				"0": {
+					"name": "keyword.other.ytt"
+				}
+			},
+			"end": "\\n",
 			"patterns": [
 				{
-					"name": "constant.character.escape.yaml",
-					"match": "\\\\."
+					"include": "source.starlark"
 				}
 			]
+		},
+		"yaml-comment": {
+			"begin": "#",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.comment.yaml"
+				}
+			},
+			"end": "\\n",
+			"name": "comment.line.number-sign"
 		}
 	},
 	"scopeName": "source.yaml.ytt"
