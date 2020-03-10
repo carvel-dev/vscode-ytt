@@ -1,0 +1,69 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "YAML",
+	"patterns": [
+		{
+			"begin": "(?:(^[ \\t]*)|[ \\t]+)(?=#\\p{Print}*$)",
+			"beginCaptures": {
+				"1": {
+					"name": "punctuation.whitespace.comment.leading.yaml"
+				}
+			},
+			"end": "(?!\\G)",
+			"patterns": [
+				{
+					"begin": "#@",
+					"beginCaptures": {
+						"0": {
+							"name": "keyword.operator"
+						}
+					},
+					"end": "\\n",
+					"patterns": [
+						{
+							"include": "source.starlark"
+						}
+					]
+				},
+				{
+					"begin": "#!",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.yaml"
+						}
+					},
+					"end": "\\n",
+					"name": "comment.line.number-sign"
+				},
+				{
+					"begin": "#",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.yaml"
+						}
+					},
+					"end": "\\n",
+					"name": "comment.line.number-sign"
+				}
+			]
+		},
+		{
+			"include": "source.yaml"
+		}
+	],
+	"repository": {
+		"keywords": {},
+		"strings": {
+			"name": "string.quoted.double.yaml",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.yaml",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.yaml.ytt"
+}

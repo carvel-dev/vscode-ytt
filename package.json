@@ -1,0 +1,21 @@
+{
+    "name": "ytt",
+    "displayName": "ytt",
+    "description": "Syntax highlighting for ytt",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "grammars": [
+            {
+                "language": "yaml",
+                "scopeName": "source.yaml.ytt",
+                "path": "./syntaxes/yaml.tmLanguage.json"
+            }
+        ]
+    }
+}
