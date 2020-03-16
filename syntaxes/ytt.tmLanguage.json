@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "YAML",
+	"name": "ytt",
 	"patterns": [
 		{
 			"include": "#comment"
@@ -44,7 +44,7 @@
 			"begin": "#@",
 			"beginCaptures": {
 				"0": {
-					"name": "keyword.other.ytt"
+					"name": "keyword.control.flow.ytt"
 				}
 			},
 			"end": "\\n",

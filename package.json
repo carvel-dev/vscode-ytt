@@ -1,8 +1,15 @@
 {
-    "name": "ytt",
-    "displayName": "ytt",
+    "name": "vscode-ytt",
+    "displayName": "vscode-ytt",
     "description": "Syntax highlighting for ytt",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ewrenn8/vscode-ytt"
+    },
+    "bugs": {
+        "url": "https://github.com/ewrenn8/vscode-ytt/issues"
+    },
     "engines": {
         "vscode": "^1.42.0"
     },
@@ -14,7 +21,7 @@
             {
                 "language": "yaml",
                 "scopeName": "source.yaml.ytt",
-                "path": "./syntaxes/yaml.tmLanguage.json"
+                "path": "./syntaxes/ytt.tmLanguage.json"
             }
         ]
     }
