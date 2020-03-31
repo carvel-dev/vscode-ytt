@@ -6,10 +6,10 @@
     "publisher": "ewrenn",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ewrenn8/vscode-ytt"
+        "url": "https://github.com/k14s/vscode-ytt"
     },
     "bugs": {
-        "url": "https://github.com/ewrenn8/vscode-ytt/issues"
+        "url": "https://github.com/k14s/vscode-ytt/issues"
     },
     "engines": {
         "vscode": "^1.42.0"
