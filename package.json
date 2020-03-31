@@ -2,7 +2,7 @@
     "name": "vscode-ytt",
     "displayName": "vscode-ytt",
     "description": "Syntax highlighting for ytt",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "ewrenn",
     "repository": {
         "type": "git",
