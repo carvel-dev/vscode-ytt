@@ -7,7 +7,7 @@ cli](https://github.com/k14s/ytt)
 
 - Syntax highlighting
 
- TODO: Add screenshots
+ ![](images/syntax-highlighting.png)
 
 ## Requirements
 
