@@ -2,7 +2,7 @@
     "name": "vscode-ytt",
     "displayName": "vscode-ytt",
     "description": "Syntax highlighting for ytt",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "ewrenn",
     "repository": {
         "type": "git",
@@ -18,9 +18,22 @@
         "Programming Languages"
     ],
     "contributes": {
+        "languages": [
+            {
+                "id": "ytt",
+                "extensions": [
+                    ".yaml",
+                    ".yml"
+                ],
+                "aliases": [
+                    "ytt"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
         "grammars": [
             {
-                "language": "yaml",
+                "language": "ytt",
                 "scopeName": "source.yaml.ytt",
                 "path": "./syntaxes/ytt.tmLanguage.json"
             }

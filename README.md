@@ -15,4 +15,5 @@ This extensions requires the [starlark language extension](https://github.com/ph
 
 ## Known Issues
 
-Theme overlap between starlark and yaml highlighting.
+Multi-line function calls result in all following annotations being matched as
+starlark comments.

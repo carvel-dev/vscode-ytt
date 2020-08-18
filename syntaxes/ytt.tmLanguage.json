@@ -41,14 +41,23 @@
 			"name": "comment.line.number-sign.ytt"
 		},
 		"ytt-annotation": {
-			"begin": "#@",
+			"begin": "#@\\S*",
 			"beginCaptures": {
 				"0": {
-					"name": "keyword.control.flow.ytt"
+					"name": "support.class.ytt"
 				}
 			},
 			"end": "\\n",
 			"patterns": [
+				{
+					"include": "#ytt-combo-end"
+				},
+				{
+					"include": "#ytt-end"
+				},
+				{
+					"include": "#ytt-def"
+				},
 				{
 					"include": "source.starlark"
 				}
@@ -63,6 +72,18 @@
 			},
 			"end": "\\n",
 			"name": "comment.line.number-sign"
+		},
+		"ytt-combo-end": {
+			"match": "(for|if|def)\/end",
+			"name": "keyword.control.flow.ytt"
+		},
+		"ytt-end": {
+			"match": "\\s+end$",
+			"name": "keyword.control.flow.ytt"
+		},
+		"ytt-def": {
+			"match":  "\\s*\\b(def)\\s+(?=[[:alpha:]_][[:word:]]*\\s*\\()",
+			"name": "keyword.control.flow.ytt"
 		}
 	},
 	"scopeName": "source.yaml.ytt"
