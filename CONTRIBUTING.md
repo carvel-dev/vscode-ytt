@@ -4,7 +4,7 @@ We’d love to accept your patches and contributions to this project. Please rev
 
 # Communication
 
-We prefer communicating asynchronously through GitHub issues and the [k14s Slack channel](https://kubernetes.slack.com/archives/CH8KCCKA5). In order to be inclusive to the community, if a conversation related to an issue happens outside of these channels, we appreciate summarizing the conversation's context and adding it to an issue.
+We prefer communicating asynchronously through GitHub issues and the [#carvel Slack channel](https://kubernetes.slack.com/archives/CH8KCCKA5). In order to be inclusive to the community, if a conversation related to an issue happens outside of these channels, we appreciate summarizing the conversation's context and adding it to an issue.
 
 # Propose a Change
 
@@ -20,8 +20,8 @@ Once an issue is labeled with `in-progress`, a team member has begun investigati
 
 # Contributor License Agreement
 
-All contributors to this project must have a signed Contributor License Agreement (**"CLA"**) on file with us. The CLA grants us the permissions we need to use and redistribute your contributions as part of the project; you or your employer retain the copyright to your contribution. Before a PR can pass all required checks, our CLA action will prompt you to accept the agreement. Head over to https://cla.pivotal.io/ to see your current agreement(s) on file or to sign a new one.
+All contributors to this project must have a signed Contributor License Agreement (**"CLA"**) on file with us. The CLA grants us the permissions we need to use and redistribute your contributions as part of the project; you or your employer retain the copyright to your contribution. Before a PR can pass all required checks, our CLA action will prompt you to accept the agreement. Head over to https://cla.vmware.com/ to see your current agreement(s) on file or to sign a new one.
 
 We generally only need you (or your employer) to sign our CLA once and once signed, you should be able to submit contributions to any VMware project.
 
-Note: if you would like to submit an "_obvious fix_" for something like a typo, formatting issue or spelling mistake, you may not need to sign the CLA. Please see our information on [obvious fixes](https://cla.pivotal.io/about#obvious-fix) for more details.
+Note: if you would like to submit an "_obvious fix_" for something like a typo, formatting issue or spelling mistake, you may not need to sign the CLA.
